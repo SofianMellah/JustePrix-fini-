@@ -1,4 +1,4 @@
-let nombreAleatoire = Math.floor(Math.random() * 101)
+let nombreAleatoire = Math.floor(Math.random() * 100 +1)
 console.log(nombreAleatoire)
 let limiteTentative = 0;
 
@@ -10,22 +10,22 @@ function justePrix(){
     limiteTentative++
 
     if(prix < nombreAleatoire){
-        console.log("Choisissez un nombre plus élevé")
-        document.getElementById("résultat").innerHTML = "choisissez un nombre plus élevé."
+        console.log("Choisissez un nombre plus élevé" + limiteTentative)
+        document.getElementById("résultat").innerHTML = "choisissez un nombre plus élevé, vous êtes à votre "  + limiteTentative +" tentatives !"
     }
 
     else if(prix > nombreAleatoire){
-        console.log("Choisissez un nombre moins élevé")
-        document.getElementById("résultat").innerHTML = "choisissez un nombre moins élevé."
+        console.log("Choisissez un nombre moins élevé" + limiteTentative)
+        document.getElementById("résultat").innerHTML = "choisissez un nombre moins élevé, vous êtes à votre "  + limiteTentative +" tentatives !"
     }
         
     else if(prix == nombreAleatoire){
-        console.log("Félicitation vous avez trouvé le nombre exact")
-        document.getElementById("résultat").innerHTML = "félicitation vous avez trouver le nombre exact."
+        console.log("Félicitation vous avez trouvé le nombre exact" + limiteTentative)
+        document.getElementById("résultat").innerHTML = "félicitation vous avez trouver le nombre exact à votre "  + limiteTentative +" tentatives !"
     }
         
     if(limiteTentative > 10){
-        console.log("Malheuresement, vous avez eu 10 tentatives et vous avez échoué")
+        console.log("Malheureusement, vous avez eu 10 tentatives et vous avez échoué")
         document.getElementById("résultat").innerHTML = "malheuresement, vous avez eu 10 tentatives et vous avez échoué."
     }
 }
