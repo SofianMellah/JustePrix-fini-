@@ -19,7 +19,7 @@ function justePrix(){
     }
         
     else if(prix == nombreAleatoire){
-        document.getElementById("résultat").innerHTML = "félicitation vous avez trouvé le nombre exact au bout " + limiteTentative + " tentative(s) !"
+        document.getElementById("résultat").innerHTML = "félicitation vous avez trouvé le nombre exact au bout de " + limiteTentative + " tentative(s) !"
     }
         
     if(limiteTentative > 10){
