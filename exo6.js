@@ -10,6 +10,7 @@ function justePrix(){
     
     limiteTentative++
     nombreTentativesMax--
+    
     if(prix < nombreAleatoire){
         document.getElementById("résultat").innerHTML = "choisissez un nombre plus élevé, vous êtes à votre "  + limiteTentative +" tentative(s) ! " + "Il vous reste " + nombreTentativesMax + " tentative(s)"
     }
@@ -23,6 +24,6 @@ function justePrix(){
     }
         
     if(limiteTentative > 10){
-        document.getElementById("résultat").innerHTML = "malheuresement, vous avez eu 10 tentatives et vous avez échoué."
+        document.getElementById("résultat").innerHTML = "malheureusement, vous avez eu 10 tentatives et vous avez échoué."
     }
 }
