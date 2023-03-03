@@ -1,4 +1,4 @@
-let nombreAleatoire = Math.floor(Math.random() * 100 +1)
+let nombreAleatoire = Math.floor(Math.random() * 100 +1) /* Math.floot sert à avoir un nombre entier et Math random sert à générer un nombre aléatoire entre 0 et 1 exclu, du coup si on veut entre 0 et 100 on fait *100 logiquement et on rajoute +1 car nous arriverons qu'à 99 maximum */
 console.log(nombreAleatoire)
 let limiteTentative = 0;
 let nombreTentativesMax = 10
